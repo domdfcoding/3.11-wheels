@@ -1,0 +1,7 @@
+[submodule "repos/cython"]
+	path = repos/cython
+	url = https://github.com/cython/cython
+[submodule "repos/numpy"]
+	path = repos/numpy
+	url = https://github.com/numpy/numpy
+	branch = v1.22.1

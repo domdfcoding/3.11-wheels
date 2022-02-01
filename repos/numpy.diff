@@ -1,0 +1,22 @@
+diff --git a/setup.py b/setup.py
+index c520ed69e..2e19445e8 100755
+--- a/setup.py
++++ b/setup.py
+@@ -51,7 +51,7 @@
+ # Needed for backwards code compatibility below and in some CI scripts.
+ # The version components are changed from ints to strings, but only VERSION
+ # seems to matter outside of this module and it was already a str.
+-FULLVERSION = versioneer.get_version()
++FULLVERSION = "1.22.1"
+ 
+ # Capture the version string:
+ # 1.22.0.dev0+ ... -> ISRELEASED == False, VERSION == 1.22.0
+@@ -414,7 +414,7 @@ def setup_package():
+         classifiers=[_f for _f in CLASSIFIERS.split('\n') if _f],
+         platforms=["Windows", "Linux", "Solaris", "Mac OS-X", "Unix"],
+         test_suite='pytest',
+-        version=versioneer.get_version(),
++        version="1.22.1",
+         cmdclass=cmdclass,
+         python_requires='>=3.8',
+         zip_safe=False,
